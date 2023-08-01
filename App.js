@@ -11,7 +11,6 @@ import {
 
 import Cesta from './src/telas/Cesta';
 import Sacolao from './src/telas/Sacolao';
-import Imagens from './src/telas/Imagens';
 import mock from './src/mocks/cesta';
 
 function MenuCesta(){
@@ -38,10 +37,6 @@ function TabsMenu(){
               iconName = focused 
                 ? 'nutrition' 
                 : 'nutrition-outline';
-            } else if (route.name === 'Imagens') {
-              iconName = focused 
-                ? 'camera' 
-                : 'camera-outline';
             }
 
             // You can return any component that you like here!
@@ -52,8 +47,7 @@ function TabsMenu(){
         })}
       >
         <Tab.Screen name="Cesta de Frutas" component={MenuCesta} /> 
-        <Tab.Screen name="O Sacolão" component={Sacolao} />
-        <Tab.Screen name="Imagens" component={Imagens} /> 
+        <Tab.Screen name="O Sacolão" component={Sacolao} /> 
       </Tab.Navigator>
   );
 }
